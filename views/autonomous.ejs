@@ -1,0 +1,36 @@
+<div class="mt-4 p-3 text-black box" style="height:fit-content">
+  <h4 style="text-align: center;">Autonomous Control</h4>
+  <h5 style="text-align: center;">Area Coverage</h5>
+  <hr style="margin-top: 0;">
+  <img class="image_area" width=350 height=232 src="images/area coverage.png">
+  <div class="container">
+    <table class="table">
+      <tr>
+        <td style="padding-top:4%">Final Latitude</td>
+        <td>
+          <input type="text" class="form-control cordinates" name="Latitude" id="lat" placeholder="21.203510" size="10" autocomplete="off" disabled>
+        </td>
+        <td style="padding-left: auto;padding-right: auto;"><input class="reset" type="button" id="autonomousReset" value="Reset"></td>
+      </tr>
+      
+      <tr>
+        <td style="padding-top:4%">Final Longitude</td>
+        <td>
+          <input type="text" class="form-control cordinates" name="Longitude" id="long" placeholder="72.839233" size="10" autocomplete="off" disabled>
+        </td>
+        <td>
+          <input class="btn btn-info" type="button" id="enter" value="Enter" disabled>
+        </td>
+      </tr>
+
+    </table>
+    <p>Status - <span class="ctrlStatus" id="autonomousStatus">Closed</span></p>
+    <div class="cam-btn">
+        <input class="btn btn-info btn-lg" style="margin-right: 8%;" type="button" id="autonomousStart" value="Start" enabled>
+        <input class="btn btn-danger btn-lg" style="margin-left: 8%;" type="button" id="autonomousEnd" value="End" enabked>
+    </div>
+  </div>
+</div> 
+
+
+

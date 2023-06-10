@@ -1,0 +1,131 @@
+<%- include ('header') %>
+ <%- include ('navbar_about') %>
+
+    <div class="container" style="padding-top: 3%;">
+        <h1 class="about1" style="text-align: center;margin-bottom: 4%;">About</h1>
+        <p class="about2" style="text-align: justify;">
+            SWEEP provides an interface to operate ROS (Robot Operating System) based Bot from website. Interface
+            provides two operating mode autonomous and manual control along with status of Bot in form of visual
+            feed and sensor data.
+        </p>
+        <hr>
+        <h4 class="about3">Navigation Bar</h4>
+        <ul class="about4">
+                <div>
+                    <p><u><b>Home Page</b></u></p>
+                    <p>Interface to operate Bot from web.</p>
+                </div>
+            <hr>
+                <div>
+                    <p><u><b>About</b></u></p>
+                    <p>Guide to operate Bot using this web interface.</p>
+                </div>
+            <hr>
+                <div>
+                    <p><u><b>Contact</b></u></p>
+                    <p>You can give your valuable suggestion.</p>
+                </div>   
+        </ul>
+        <hr>
+        <h4 class="about3">Sidebar</h4>
+        <ul class="about4">
+                <div>
+                    <p><u><b>Server</b></u></p>
+                    <p style="text-align: justify;">
+                        Launch WebSocket Server on your local machine which is responsible for connection between local
+                        machine and web interface. It also updates the connection status between server and web
+                        interface. For more details visit <a href="https://github.com/RobotWebTools/rosbridge_suite"
+                            target="_blank">RobotWebTools</a>.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <p><u><b>Roscore</b></u></p>
+                    <p style="text-align: justify;">Run Roscore on your local machine and update the status of it.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b><u>Gazebo</b></u></p>
+                    <p style="text-align: justify;">Launch Gazebo which is simulation software and load <a
+                            href="https://github.com/SachinVekariya/Autonomous_Bot/tree/main/bot/urdf"
+                            target="_blanl">Robot model</a> into Gazebo on local machine.
+                        It also publish various sensors data which are mounted on Bot.</p>
+                </div>
+                <!-- <hr>
+                <div>
+                    <p><b><u>Mapviz</b></u></p>
+                    <p style="text-align: justify;">
+                        Launch <a href="http://wiki.ros.org/mapviz" target="_blank">Mapviz</a> which is ROS based
+                        visualization tool.
+                    </p>
+                </div> -->
+        </ul>
+        <hr>
+        <h4 class="about3">Camera</h4>
+        <p class="about4" style="text-align: justify;">
+            It provides video feed from Camera which is mounted on Bot. In backend, it runs <a
+                href="http://wiki.ros.org/mjpeg_server" target="_target">MJPEG Server</a> on your local machine and load
+            image on web interface.
+        </p>
+        <hr>
+        <h4 class="about3">Detection</h4>
+        <p class="about4" style="text-align: justify;">
+        It processes the image captured in camera and displays the image with description of waste using artifical intelligence and machine learning techniques.
+        </p>
+        <hr>
+        <h4 class="about3">Task Selection</h4>
+        <p class="about4" style="text-align: justify;">
+            Default task is Manual Control which you can control from Manual Control and you can switch to Autonomous Control by activating switch.
+        </p>
+        <hr>
+        <h4 class="about3">Status</h4>
+        <ul class="about4">
+                <div>
+                    <p><b><u>Collection</b></u></p>
+                    <p>Turning this on, collection mechanism starts.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b><u>Vibration</b></u></p>
+                    <p>Vibration mechanism starts after this is turned on.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b><u>Conveyor</b></u></p>
+                    <p>On turning it, the conveyor belt starts movement.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b><u>Segregation</b></u></p>
+                    <p>This turns on the servo motors, which segregates waste using flap's motion.</p>
+                </div>
+        </ul>
+        <hr>
+        <h4 class="about3">Data Analysis</h4>
+        <p class="about4" style="text-align: justify;">
+        It tabulates the data obtained from detection process and give percentage of plastic and non plastic waste.
+        </p>
+        <hr>
+        <h4 class="about3">Manual Control</h4>
+        <ul class="about4">
+                <div>
+                    <p><b><u>Button</b></u></p>
+                    <p>It can control bot with set of buttons. Button W for forward, S for backward, A for left, D for
+                        right and center button for Stop.</p>
+                </div>
+                <hr>
+                <div>
+                    <p><b><u>Keyboard</b></u></p>
+                    <p>It can control bot with keyboard. Key W for forward, S for backward, A for left, D for right and
+                        Spacebar button for Stop.</p>
+                </div>
+            <hr>
+                <p><b>Button/Keyboard Control is disabled on Autonomous Mode.</b></p>
+        </ul>
+        <hr>
+        <h4 class="about3">Autonomous Control</h4>
+        <p class="about4">To operate in autonomous mode, we need to provide information about initial and final latitudes and longitudes. Then,you can start autonomous mode by pressing Start button. Bot strategically moves along the path shown in figure, maximizing area coverage to optimize waste collection. The robot autonomously navigates, skillfully avoiding obstacles to successfully complete its journey.
+        </p>
+        <hr>
+    </div>
+    <%- include ('footer') %>

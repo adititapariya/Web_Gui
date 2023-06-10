@@ -1,0 +1,55 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white sidebar" style="width: 300px; height: auto;">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="sidebarLi">
+            <div class="btn btn-light rounded collapsed" style="display: block; height:40px;" data-bs-toggle="collapse" data-bs-target="#socket" aria-expanded="false">
+                <span style="float: left;">Server </span>
+                <i class="fas fa-chevron-down mt-1" style="float: right;"></i>
+            </div>
+            
+            <div class="collapse container p-2" id="socket">
+                <p>Status - <span class="ctrlStatus" id="socketStatus">Closed</span></p>
+                <input class="btn btn-info btn-lg" type="button" id="webSocketStart" value="Start">
+                <input class="btn btn-danger btn-lg" type="button" id="webSocketEnd" value="End" disabled>
+            </div>
+        </li>
+        <hr>
+        <li class="sidebarLi">
+            <div class="btn btn-light rounded collapsed" style="display: block; height:40px;" data-bs-toggle="collapse" data-bs-target="#roscore" aria-expanded="false">
+                <span style="float: left;">Roscore </span>
+                <i class="fas fa-chevron-down mt-1" style="float: right;"></i>
+            </div>
+            
+            <div class="collapse container p-2" id="roscore">
+                <p>Status - <span class="ctrlStatus" id="roscoreStatus">Closed</span></p>
+                <input class="btn btn-info btn-lg" type="button" id="roscoreStart" value="Start">
+                <input class="btn btn-danger btn-lg" type="button" id="roscoreEnd" value="End" disabled>
+            </div>
+        </li>
+        <hr>
+        <li class="sidebarLi">
+            <div class="btn btn-light rounded collapsed" style="display: block; height:40px;" data-bs-toggle="collapse" data-bs-target="#gazebo" aria-expanded="false">
+                <span style="float: left;">Gazebo </span>
+                <i class="fas fa-chevron-down mt-1" style="float: right;"></i>
+            </div>
+            
+            <div class="collapse container p-2" id="gazebo">
+                <p>Status - <span class="ctrlStatus" id="gazeboStatus">Closed</span></p>
+                <input class="btn btn-info btn-lg" type="button" id="gazeboStart" value="Start">
+                <input class="btn btn-danger btn-lg" type="button" id="gazeboEnd" value="End" disabled>
+            </div>
+        </li>
+        <!-- <hr>
+        <li class="sidebarLi">
+            <div class="btn btn-light rounded collapsed" style="display: block; height:40px;" data-bs-toggle="collapse" data-bs-target="#mapviz" aria-expanded="false">
+                <span style="float: left;">Mapviz </span>
+                <i class="fas fa-chevron-down mt-1" style="float: right;"></i>
+            </div>
+            
+            <div class="collapse container p-2" id="mapviz">
+                <p>Status - <span class="ctrlStatus" id="mapvizStatus">Closed</span></p>
+                <input class="btn btn-info btn-lg" type="button" id="mapvizStart" value="Start">
+                <input class="btn btn-danger btn-lg" type="button" id="mapvizEnd" value="End" disabled>
+            </div>
+        </li> -->
+    </ul>
+</div>

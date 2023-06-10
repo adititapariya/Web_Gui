@@ -1,0 +1,29 @@
+<%- include ('header') %>
+ <%- include ('navbar_contact') %>
+    <div class="container" style="padding-top: 3%;">
+        <h1 class="contact1" style="text-align: center;margin-bottom: 4%;">Contact</h1>
+        <p>For setup procedure, kindly visit <a href="https://github.com/adititapariya" target="_blank">GitHub</a>
+            Page.</p>
+        <hr>
+        <h4 style="margin-top: 3%;margin-bottom: 3%;">Contact Developer</h4>
+        <form action="tapariyaaditi23@gmail.com&subject= Feedback for Beach Cleaning Robot Bhaumik" target="_blank" method="post" enctype="text/plain">
+            <div>
+                <label class="form-label" for="name">Name :</label>
+                <input class="form-control" type="text" name="name" id="name" autocomplete="off" placeholder="Aditi Tapariya" required/>
+            </div>
+            <div>
+                <label class="form-label" for="email">Email :</label>
+                <input class="form-control" type="email" name="email" id="email" autocomplete="off" placeholder="name@gmail.com" required/>
+            </div>
+            <div>
+                <label class="form-label" for="comment">Comments :</label>
+                <br />
+                <textarea class="form-control" name="comments" id="comment" rows="5" autocomplete="off" placeholder="Send your comments to us."></textarea>
+            </div>
+            <div style="margin-top: 3%;">
+                <input class="btn btn-info btn-lg" style="margin-right: 1%;" type="submit" name="submit" value="Send" />
+                <input class="btn btn-danger btn-lg" style="margin-left: 1%;" type="reset" name="reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+    <%- include ('footer') %>
